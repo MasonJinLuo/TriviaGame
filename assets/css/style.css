@@ -1,0 +1,31 @@
+
+.disappear {
+	display:none;
+}
+
+.correct{
+	background-color: #00FF00;
+}
+
+.incorrect{
+	background-color: #FF6347;
+}
+
+#mainSection{
+	text-align: center;
+	font: arial, sans-serif;
+}
+
+#timer{
+	font: bold 35px arial, sans-serif;
+	color: black;
+}
+
+
+p{
+	margin: 10px;
+}
+
+button{
+	margin: 5px;
+}

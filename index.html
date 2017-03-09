@@ -1,0 +1,74 @@
+<DOCTYPE html>
+<html>
+<title> What Do You Know About Mason </title>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="assets/javascript/app.js"></script>
+
+</head>
+<body>
+
+	<div id="mainSection" class="col-lg-8 col-lg-offset-2">
+		<h1> What Do You Know About Mason?! </h1>
+		<p = id="timer"> 15 </p>
+
+		<p id="opener"> This is time! You will have 15 seconds per question. Click start when you are ready!</p>
+		<button id="start"> Start! </button>
+
+
+ 		<div class="disappear" id="containerQ1">
+			<p class="questions, question1" id="q1"> How many family members in Mason's family including himself? </p>
+			<button class="answerButton question1 wrongAnswer" id="answers1-1"> 3 </button>
+			<button class="answerButton question1 wrongAnswer" id="answers1-2"> 4 </button>
+			<button class="answerButton question1 rightAnswer" id="answers1-3"> 5 </button>
+			<button class="answerButton question1 wrongAnswer" id="answers1-4"> 6 </button>
+		</div>
+
+		<div class="disappear" id="containerQ2">
+			<p class="questions, question2" id="q2"> Which sport does Mason play? </p>
+			<button class="answerButton question2 wrongAnswer" id="answers2-1"> Baseball </button>
+			<button class="answerButton question2 wrongAnswer" id="answers2-2"> Basketball </button>
+			<button class="answerButton question2 wrongAnswer" id="answers2-3"> Soccer </button>
+			<button class="answerButton question2 rightAnswer" id="answers2-4"> Tennis </button>
+		</div>
+
+		<div class="disappear" id="containerQ3">
+			<p class="questions, question3" id="q3"> What trading card game does Mason play? </p>
+			<button class="answerButton question3 rightAnswer" id="answers3-1"> Pokemon </button>
+			<button class="answerButton question3 wrongAnswer" id="answers3-2"> Magic The Gathering </button>
+			<button class="answerButton question3 wrongAnswer" id="answers3-3"> Yu-Gi-Oh </button>
+			<button class="answerButton question3 wrongAnswer" id="answers3-4"> Force of Will </button>
+		</div>
+		
+		<div class="disappear" id="containerQ4">
+			<p class="questions, question4" id="q4"> What degree does Mason have? </p>
+			<button class="answerButton question4 wrongAnswer" id="answers4-1"> Bachelors in Health Information Management </button>
+			<br>
+			<button class="answerButton question4 wrongAnswer" id="answers4-2">  Bachelor of Science in Psychology </button>
+			<br>
+			<button class="answerButton question4 rightAnswer" id="answers4-3"> Bachelors of Science in Nursing </button>
+			<br>
+			<button class="answerButton question4 wrongAnswer" id="answers4-4"> Bachelors in Biology  </button>
+		</div>
+
+
+		<div class="disappear" id="containerQ5">
+			<p class="questions, question5" id="q5"> How tall is Mason? </p>
+			<button class="answerButton question5 wrongAnswer" id="answers5-1"> 5'5 </button>
+			<button class="answerButton question5 wrongAnswer" id="answers5-2">  5'6 </button>
+			<button class="answerButton question5 wrongAnswer" id="answers5-3"> 5'7 </button>
+			<button class="answerButton question5 rightAnswer" id="answers5-4"> 5'8 </button>
+		</div>
+
+
+		<p> correct answers: <span id='correct'></span> </p>
+		<p> wrong answers: <span id='incorrect'></span> </p>
+
+	
+
+
+	</div>
+</body>
+</html>
