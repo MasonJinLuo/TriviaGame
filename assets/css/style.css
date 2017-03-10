@@ -3,17 +3,12 @@
 	display:none;
 }
 
-.correct{
-	background-color: #00FF00;
-}
-
-.incorrect{
-	background-color: #FF6347;
-}
-
 #mainSection{
 	text-align: center;
 	font: arial, sans-serif;
+	background-color: white;
+	margin-top: 50px;
+
 }
 
 #timer{
@@ -28,4 +23,8 @@ p{
 
 button{
 	margin: 5px;
+}
+
+body{
+	background-image: url("../images/qmarks.jpg");
 }

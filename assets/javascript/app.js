@@ -42,8 +42,8 @@ var tikTok = {
 
 function clearButton(){
 
-	$rightAnswer.removeClass('correct');
-	$wrongAnswer.removeClass('incorrect');
+	$rightAnswer.removeClass('btn-success');
+	$wrongAnswer.removeClass('btn-danger');
 	clearInterval(nextQuestion);
 	buttonLocked = false
 	tikTok.time = 15
@@ -61,8 +61,8 @@ function timeOut() {
 	wrongAnswers ++;
 	$correct.html(correctAnswers);
 	$incorrect.html(wrongAnswers);
-	$rightAnswer.addClass('correct');
-	$wrongAnswer.addClass('incorrect'); 
+	$rightAnswer.addClass('btn-success');
+	$wrongAnswer.addClass('btn-danger'); 
 	buttonLocked = true;
 	nextQuestion = setInterval(interValFunc, 4000); 
 	
@@ -78,7 +78,6 @@ function danger() {
 
 
 $start.on('click', function() {
-
 	$('#opener').addClass('disappear');
 	$start.addClass('disappear');
 	$containerQ1.removeClass('disappear'); 
@@ -86,8 +85,7 @@ $start.on('click', function() {
 	$incorrect.html(wrongAnswers);
 	tikTok.start();
 
-})
-
+});
 
 	
  $answerButton.on('click', function() {
@@ -101,7 +99,7 @@ $start.on('click', function() {
 			correctAnswers ++;
 			$correct.html(correctAnswers);
 			$incorrect.html(wrongAnswers);
-			$rightAnswer.addClass('correct');
+			$rightAnswer.addClass('btn-success');
 			buttonLocked = true
 			
 
@@ -110,8 +108,8 @@ $start.on('click', function() {
 			wrongAnswers ++;
 			$correct.html(correctAnswers);
 			$incorrect.html(wrongAnswers);
-			$rightAnswer.addClass('correct');
-			$wrongAnswer.addClass('incorrect');
+			$rightAnswer.addClass('btn-success');
+			$wrongAnswer.addClass('btn-danger');
 			buttonLocked = true;
 		}
 
@@ -124,25 +122,25 @@ $start.on('click', function() {
 });
 
 function interValFunc () { 
-	if ($containerQ1.hasClass('disappear') === false && $rightAnswer.hasClass('correct')){
+	if ($containerQ1.hasClass('disappear') === false && $rightAnswer.hasClass('btn-success')){
 		$containerQ1.addClass('disappear');
 		$containerQ2.removeClass('disappear');
 		clearButton();
 	
 
-	} else if ($containerQ2.hasClass('disappear') === false && $rightAnswer.hasClass('correct')){
+	} else if ($containerQ2.hasClass('disappear') === false && $rightAnswer.hasClass('btn-success')){
 		$containerQ2.addClass('disappear');
 		$containerQ3.removeClass('disappear');
 		clearButton();
 		
 
-	} else if ($containerQ3.hasClass('disappear') === false && $rightAnswer.hasClass('correct')){
+	} else if ($containerQ3.hasClass('disappear') === false && $rightAnswer.hasClass('btn-success')){
 		$containerQ3.addClass('disappear');
 		$containerQ4.removeClass('disappear');
 		clearButton();
 
 		
-	} else if ($containerQ4.hasClass('disappear') === false && $rightAnswer.hasClass('correct')){
+	} else if ($containerQ4.hasClass('disappear') === false && $rightAnswer.hasClass('btn-success')){
 		$containerQ4.addClass('disappear');
 		$containerQ5.removeClass('disappear');
 		clearButton();
