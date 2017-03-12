@@ -10,6 +10,7 @@ var $containerQ2 = $('#containerQ2');
 var $containerQ3 = $('#containerQ3');
 var $containerQ4 = $('#containerQ4');
 var $containerQ5 = $('#containerQ5');
+var $containerResults = $('#containerResults')
 var $answerButton = $('.answerButton')
 var $rightAnswer = $('.rightAnswer')
 var $wrongAnswer = $('.wrongAnswer')
@@ -145,6 +146,11 @@ function interValFunc () {
 		$containerQ5.removeClass('disappear');
 		clearButton();
 	
+	} else if ($containerQ5.hasClass('disappear') === false && $rightAnswer.hasClass('btn-success')){
+		$containerQ5.addClass('disappear');
+		$containerResults.removeClass('disappear');
+		clearButton();
+		tikTok.stop();
 	}
 		
 }
